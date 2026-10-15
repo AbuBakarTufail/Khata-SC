@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="HisabApp.Api/HisabApp.Api.csproj" />
+  <Project Path="HisabApp.Library/HisabApp.Library.csproj" />
+</Solution>

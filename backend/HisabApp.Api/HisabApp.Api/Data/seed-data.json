@@ -1,0 +1,65 @@
+{
+  "tenants": [
+    {
+      "id": "tenant-business-nexus",
+      "name": "Nexus Digital Agency",
+      "type": "business",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "monthlyExpenseLimit": 14000,
+      "fiscalMonthStart": 1,
+      "description": "B2B Creative Tech Agency & Product Studio",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "tenant-personal-hamza",
+      "name": "Hamza Personal Hisab",
+      "type": "personal",
+      "currency": "PKR",
+      "currencySymbol": "Rs ",
+      "monthlyExpenseLimit": 300000,
+      "fiscalMonthStart": 1,
+      "description": "Personal, Family & Household Expense Management",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "income": [
+    { "id": "inc-b-1", "tenantId": "tenant-business-nexus", "month": "2026-10", "date": "2026-10-01", "amount": 12500, "category": "Client Retainer / Contract", "source": "Enterprise SaaS Retainer (Acme Corp)", "isRecurring": true, "notes": "Monthly recurring dev contract", "createdAt": "2026-10-01T10:00:00.000Z" },
+    { "id": "inc-b-2", "tenantId": "tenant-business-nexus", "month": "2026-10", "date": "2026-10-05", "amount": 6800, "category": "Business Profit / Sales", "source": "Mobile App Milestone Payment (FinTech Client)", "isRecurring": false, "notes": "Sprint 3 completion milestone", "createdAt": "2026-10-05T12:00:00.000Z" },
+    { "id": "inc-b-3", "tenantId": "tenant-business-nexus", "month": "2026-10", "date": "2026-10-10", "amount": 3200, "category": "Consulting & Freelance", "source": "UI/UX Design Sprint (HyperGrowth AI)", "isRecurring": false, "notes": "2-week rapid prototyping contract", "createdAt": "2026-10-10T09:30:00.000Z" },
+    { "id": "inc-b-4", "tenantId": "tenant-business-nexus", "month": "2026-09", "date": "2026-09-01", "amount": 12500, "category": "Client Retainer / Contract", "source": "Enterprise SaaS Retainer (Acme Corp)", "isRecurring": true, "notes": "Monthly retainer", "createdAt": "2026-09-01T10:00:00.000Z" },
+    { "id": "inc-b-5", "tenantId": "tenant-business-nexus", "month": "2026-09", "date": "2026-09-18", "amount": 7500, "category": "Business Profit / Sales", "source": "E-Commerce Portal Launch Bonus", "isRecurring": false, "notes": "Performance bonus delivery", "createdAt": "2026-09-18T16:00:00.000Z" },
+    { "id": "inc-b-6", "tenantId": "tenant-business-nexus", "month": "2026-08", "date": "2026-08-01", "amount": 18500, "category": "Client Retainer / Contract", "source": "Core Development Contract Q3", "isRecurring": true, "notes": "Contract fee", "createdAt": "2026-08-01T10:00:00.000Z" },
+    { "id": "inc-p-1", "tenantId": "tenant-personal-hamza", "month": "2026-10", "date": "2026-10-01", "amount": 380000, "category": "Fixed Salary", "source": "Tech Director Monthly Salary", "isRecurring": true, "notes": "Net deposited salary", "createdAt": "2026-10-01T08:00:00.000Z" },
+    { "id": "inc-p-2", "tenantId": "tenant-personal-hamza", "month": "2026-10", "date": "2026-10-08", "amount": 65000, "category": "Side Hustle", "source": "Freelance Architectural Review", "isRecurring": false, "notes": "Weekend client consultation", "createdAt": "2026-10-08T14:00:00.000Z" },
+    { "id": "inc-p-3", "tenantId": "tenant-personal-hamza", "month": "2026-09", "date": "2026-09-01", "amount": 380000, "category": "Fixed Salary", "source": "Tech Director Monthly Salary", "isRecurring": true, "notes": "Net salary", "createdAt": "2026-09-01T08:00:00.000Z" },
+    { "id": "inc-p-4", "tenantId": "tenant-personal-hamza", "month": "2026-09", "date": "2026-09-15", "amount": 45000, "category": "Investments & Dividends", "source": "Mutual Fund Quarterly Dividend", "isRecurring": false, "notes": "Dividend payout", "createdAt": "2026-09-15T10:00:00.000Z" },
+    { "id": "inc-p-5", "tenantId": "tenant-personal-hamza", "month": "2026-08", "date": "2026-08-01", "amount": 380000, "category": "Fixed Salary", "source": "Tech Director Monthly Salary", "isRecurring": true, "notes": "Salary", "createdAt": "2026-08-01T08:00:00.000Z" }
+  ],
+  "expenses": [
+    { "id": "exp-b-1", "tenantId": "tenant-business-nexus", "date": "2026-10-01", "month": "2026-10", "amount": 2800, "category": "Office & Rent", "paymentMethod": "Bank Transfer", "payee": "WeWork Global Co.", "description": "Studio Office Monthly Lease & Utilities", "createdAt": "2026-10-01T09:00:00.000Z" },
+    { "id": "exp-b-2", "tenantId": "tenant-business-nexus", "date": "2026-10-02", "month": "2026-10", "amount": 420, "category": "Software & Subscriptions", "paymentMethod": "Credit Card", "payee": "Amazon Web Services", "description": "Production Cloud Cluster & RDS Hosting", "createdAt": "2026-10-02T11:00:00.000Z" },
+    { "id": "exp-b-3", "tenantId": "tenant-business-nexus", "date": "2026-10-03", "month": "2026-10", "amount": 350, "category": "Software & Subscriptions", "paymentMethod": "Credit Card", "payee": "Figma & GitHub Enterprise", "description": "Design seats & Copilot organization licenses", "createdAt": "2026-10-03T15:20:00.000Z" },
+    { "id": "exp-b-4", "tenantId": "tenant-business-nexus", "date": "2026-10-05", "month": "2026-10", "amount": 3400, "category": "Team Payroll & Labor", "paymentMethod": "Bank Transfer", "payee": "Core Engineering Contractors", "description": "Bi-weekly senior engineer contractor stipends", "createdAt": "2026-10-05T14:30:00.000Z" },
+    { "id": "exp-b-5", "tenantId": "tenant-business-nexus", "date": "2026-10-07", "month": "2026-10", "amount": 680, "category": "Marketing & Ads", "paymentMethod": "Credit Card", "payee": "Google Ads & LinkedIn", "description": "Q4 Inbound B2B lead generation campaigns", "createdAt": "2026-10-07T10:15:00.000Z" },
+    { "id": "exp-b-6", "tenantId": "tenant-business-nexus", "date": "2026-10-08", "month": "2026-10", "amount": 145, "category": "Grocery & Food", "paymentMethod": "Credit Card", "payee": "Blue Bottle Coffee", "description": "Client sprint kickoff catering & pantry supplies", "createdAt": "2026-10-08T13:40:00.000Z" },
+    { "id": "exp-b-7", "tenantId": "tenant-business-nexus", "date": "2026-10-10", "month": "2026-10", "amount": 290, "category": "Travel & Fuel", "paymentMethod": "Credit Card", "payee": "Uber & Train Pass", "description": "Client on-site discovery workshop travel", "createdAt": "2026-10-10T17:00:00.000Z" },
+    { "id": "exp-b-8", "tenantId": "tenant-business-nexus", "date": "2026-10-12", "month": "2026-10", "amount": 180, "category": "Utilities & Bills", "paymentMethod": "Debit Card", "payee": "Gigabit Fiber Telecom", "description": "High-speed dedicated office leased line", "createdAt": "2026-10-12T11:45:00.000Z" },
+    { "id": "exp-b-sep-1", "tenantId": "tenant-business-nexus", "date": "2026-09-01", "month": "2026-09", "amount": 2800, "category": "Office & Rent", "paymentMethod": "Bank Transfer", "payee": "WeWork Global Co.", "description": "Studio Office Monthly Lease", "createdAt": "2026-09-01T09:00:00.000Z" },
+    { "id": "exp-b-sep-2", "tenantId": "tenant-business-nexus", "date": "2026-09-05", "month": "2026-09", "amount": 5200, "category": "Team Payroll & Labor", "paymentMethod": "Bank Transfer", "payee": "Contract Team", "description": "September contractor payouts", "createdAt": "2026-09-05T10:00:00.000Z" },
+    { "id": "exp-b-sep-3", "tenantId": "tenant-business-nexus", "date": "2026-09-12", "month": "2026-09", "amount": 1250, "category": "Marketing & Ads", "paymentMethod": "Credit Card", "payee": "Google & Meta Ads", "description": "Product launch ad burst", "createdAt": "2026-09-12T14:00:00.000Z" },
+    { "id": "exp-b-sep-4", "tenantId": "tenant-business-nexus", "date": "2026-09-18", "month": "2026-09", "amount": 720, "category": "Software & Subscriptions", "paymentMethod": "Credit Card", "payee": "AWS & Cloudflare", "description": "Cloud hosting & enterprise WAF", "createdAt": "2026-09-18T16:00:00.000Z" },
+    { "id": "exp-b-sep-5", "tenantId": "tenant-business-nexus", "date": "2026-09-24", "month": "2026-09", "amount": 450, "category": "Travel & Fuel", "paymentMethod": "Credit Card", "payee": "Airlines & Taxi", "description": "Quarterly summit travel", "createdAt": "2026-09-24T18:00:00.000Z" },
+    { "id": "exp-p-1", "tenantId": "tenant-personal-hamza", "date": "2026-10-01", "month": "2026-10", "amount": 32000, "category": "Utilities & Bills", "paymentMethod": "Bank Transfer", "payee": "LESCO Electricity Board", "description": "Monthly residential electricity bill", "createdAt": "2026-10-01T10:00:00.000Z" },
+    { "id": "exp-p-2", "tenantId": "tenant-personal-hamza", "date": "2026-10-02", "month": "2026-10", "amount": 24500, "category": "Grocery & Food", "paymentMethod": "Credit Card", "payee": "Imtiaz Super Market", "description": "Pantry staples, dairy, organic chicken & veggies", "createdAt": "2026-10-02T16:30:00.000Z" },
+    { "id": "exp-p-3", "tenantId": "tenant-personal-hamza", "date": "2026-10-04", "month": "2026-10", "amount": 14000, "category": "Travel & Fuel", "paymentMethod": "Debit Card", "payee": "Total PARCO Filling Station", "description": "Full car petrol refill & synthetic oil top-up", "createdAt": "2026-10-04T12:15:00.000Z" },
+    { "id": "exp-p-4", "tenantId": "tenant-personal-hamza", "date": "2026-10-06", "month": "2026-10", "amount": 18500, "category": "Shopping & Retail", "paymentMethod": "Credit Card", "payee": "Outfitters / Mall of Lahore", "description": "Autumn seasonal apparel & footwear", "createdAt": "2026-10-06T19:40:00.000Z" },
+    { "id": "exp-p-5", "tenantId": "tenant-personal-hamza", "date": "2026-10-08", "month": "2026-10", "amount": 8500, "category": "Healthcare & Medical", "paymentMethod": "Cash", "payee": "Chughtai Lab & Pharmacy", "description": "Routine blood panel & family prescription refill", "createdAt": "2026-10-08T11:20:00.000Z" },
+    { "id": "exp-p-6", "tenantId": "tenant-personal-hamza", "date": "2026-10-09", "month": "2026-10", "amount": 7200, "category": "Entertainment & Leisure", "paymentMethod": "Credit Card", "payee": "Aylanto Cafe & Bistro", "description": "Weekend family dinner & desserts", "createdAt": "2026-10-09T21:00:00.000Z" },
+    { "id": "exp-p-7", "tenantId": "tenant-personal-hamza", "date": "2026-10-11", "month": "2026-10", "amount": 11000, "category": "Grocery & Food", "paymentMethod": "Online / Mobile Wallet", "payee": "Al-Fatah Gourmet Supermarket", "description": "Weekly fruits, fresh meat & kitchen supplies", "createdAt": "2026-10-11T14:10:00.000Z" },
+    { "id": "exp-p-sep-1", "tenantId": "tenant-personal-hamza", "date": "2026-09-02", "month": "2026-09", "amount": 48000, "category": "Utilities & Bills", "paymentMethod": "Bank Transfer", "payee": "LESCO Electricity", "description": "Peak summer AC electricity bill", "createdAt": "2026-09-02T10:00:00.000Z" },
+    { "id": "exp-p-sep-2", "tenantId": "tenant-personal-hamza", "date": "2026-09-07", "month": "2026-09", "amount": 52000, "category": "Grocery & Food", "paymentMethod": "Credit Card", "payee": "Metro Cash & Carry", "description": "Monthly grocery restocking", "createdAt": "2026-09-07T15:00:00.000Z" },
+    { "id": "exp-p-sep-3", "tenantId": "tenant-personal-hamza", "date": "2026-09-14", "month": "2026-09", "amount": 28000, "category": "Travel & Fuel", "paymentMethod": "Debit Card", "payee": "Shell Fuel Station", "description": "Commute petrol expense", "createdAt": "2026-09-14T11:00:00.000Z" },
+    { "id": "exp-p-sep-4", "tenantId": "tenant-personal-hamza", "date": "2026-09-22", "month": "2026-09", "amount": 35000, "category": "Shopping & Retail", "paymentMethod": "Credit Card", "payee": "Packages Mall", "description": "Home furnishings & electronics", "createdAt": "2026-09-22T17:30:00.000Z" }
+  ]
+}

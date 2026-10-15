@@ -1,0 +1,6 @@
+@HisabApp.Api_HostAddress = http://localhost:5172
+
+GET {{HisabApp.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
